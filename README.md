@@ -1,3 +1,4 @@
+# Secure voting machine - powered by Azure Sphere
 ## Infrastructure Setup:
 1.	In Azure portal, create and link to each other Azure IoT Hub and Azure IoT Hub Device Provisioning Service (DPS) resources, using the following Quick Setup guide: https://docs.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision.
 
