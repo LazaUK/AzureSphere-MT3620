@@ -55,7 +55,7 @@ azsphere device enable-development
  
 5.	Last part is to create your dashboard in PowerBI. You may configure it directly at https://powerbi.microsoft.com/en-us/ or use richer functionality with the PowerBI desktop client.
 
-## Working model - YouTube video
+## Working model - YouTube video:
 You can find short demo of the working solution here on YouTube
 
 ## Credits:
