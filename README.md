@@ -59,4 +59,6 @@ azsphere device enable-development
 You can find short demo of the working solution here on YouTube
 
 ## Credits:
-**This solution is based on the original sample code from Microsoft Azure Sphere team, published** [here](https://github.com/Azure/azure-sphere-samples)
+<div class="text-green mb-2 ml-4">
+  This solution is based on the original sample code from Microsoft Azure Sphere team, published
+</div>[here](https://github.com/Azure/azure-sphere-samples)
