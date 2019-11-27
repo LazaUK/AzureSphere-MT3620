@@ -1,5 +1,7 @@
 # Secure voting machine - powered by Azure Sphere
-![Azure Sphere MT3620 Starter Kit](/images/Overview_AvNetSK.jpg)
+<p align="center">
+  <img src="/images/Overview_AvNetSK.jpg">
+</p>
 ## Infrastructure Setup:
 1.	In Azure portal, create and link to each other Azure IoT Hub and Azure IoT Hub Device Provisioning Service (DPS) resources, using the following Quick Setup guide: https://docs.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision.
 
