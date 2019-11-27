@@ -1,5 +1,5 @@
 ## Credits:
-**This solution is based on the original code from Microsoft Azure Sphere team, published** [here](https://github.com/Azure/azure-sphere-samples)
+**This solution is based on the original sample code from Microsoft Azure Sphere team, published** [here](https://github.com/Azure/azure-sphere-samples)
 
 
 ## Infrastructure Setup:
