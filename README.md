@@ -5,10 +5,8 @@
 
 ## Infrastructure Setup:
 1. In Azure portal, create and link to each other Azure IoT Hub and Azure IoT Hub Device Provisioning Service (DPS) resources, using the following [Quick Setup guide](https://docs.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision).
-
 ![Screenshot 1.1](/images/Infra_1.png)
 > **Note**: To use Device Twin capability, IoT Hub should be on the Standard pricing tier.
-
 2. In Azure Sphere Developer Command Prompt, download CA certificate from Azure Sphere tenant using the following command:
 ```
 azsphere tenant download-CA-certificate --output CAcertificate.cer
@@ -55,10 +53,19 @@ azsphere device enable-development
 
 ## Analytics configuration:
 1. In Azure, create new Stream Analytics job and add IoT Hub as its stream input
+![Screenshot 3.1](/images/Analytics_1.png)
 2. Add PowerBI as the output for Stream Analytics job and click Authorize.
+![Screenshot 3.2](/images/Analytics_2.png)
 3. Provide relevant output alias name, so that you can use it in the Stream Analytics query.
+![Screenshot 3.3](/images/Analytics_3.png)
 4. Alternatively, you can setup Azure storage account or a database as an output for Azure Stream Analytics job.
-5. Last part is to create your dashboard in PowerBI. You may configure it directly at https://powerbi.microsoft.com/en-us/ or use richer functionality with the PowerBI desktop client.
+![Screenshot 3.4](/images/Analytics_4.png)
+5. Last part is to create your dashboard in PowerBI. You may configure it directly at https://powerbi.microsoft.com/en-us/ or use richer functionality with the PowerBI desktop client. This is an example of my PowerBI dashboard, which combines historical data from the database with the live stream from the Azure Sphere device.
+![Screenshot 3.5](/images/Analytics_5.png)
+
+## High-Level Design:
+The following diagram shows the main components utilised in this project.
+![Screenshot 4.1](/images/AzSphere_Schematics.png)
 
 ## Working model - YouTube video:
 You can find short demo of the working solution here on YouTube
