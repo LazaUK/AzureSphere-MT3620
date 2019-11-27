@@ -5,6 +5,7 @@
 
 ## Infrastructure Setup:
 1. In Azure portal, create and link to each other Azure IoT Hub and Azure IoT Hub Device Provisioning Service (DPS) resources, using the following [Quick Setup guide](https://docs.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision).
+
 ![Screenshot 1.1](/images/Infra_1.png)
 > **Note**: To use Device Twin capability, IoT Hub should be on the Standard pricing tier.
 
@@ -13,14 +14,21 @@
 azsphere tenant download-CA-certificate --output CAcertificate.cer
 ```
 You should see confirmation that the CA certificate has been saved.
- 
-3. In Azure portal, upload certificate to Azure IoT DPS -> Certificates. After upload it will show new entry with an “Unverified” status. 
+![Screenshot 1.2](/images/Infra_2.png)
+3. In Azure portal, upload certificate to Azure IoT DPS -> Certificates. After upload it will show new entry with an “Unverified” status.
+![Screenshot 1.3](/images/Infra_3.png)
 4. Then open certificate record and click “Generate Verification Code” button.
+![Screenshot 1.4](/images/Infra_4.png)
 5. In Azure Sphere Developer Command Prompt, download validation certificate signed with the DPS verification code from Step 4 above using the following command:
+```
 azsphere tenant download-validation-certificate --output ValidationCertification.cer --verificationcode <DPS_VERIFICATION_CODE>
-You should see confirmation that the validation certificate has been saved. 
+```
+You should see confirmation that the validation certificate has been saved.
+![Screenshot 1.5](/images/Infra_5.png)
 6. In Azure portal, upload validation certificate into “Verification Certificate” field of the record window from Step 4 and click “Verify” button. After validation, Azure will change the status of your certificate to “Verified”.
+![Screenshot 1.6](/images/Infra_6.png)
 7. Switch to Azure IoT DPS -> Manage Enrolments menu and add new enrolment group with the primary certificate that we verified in Step 6 above.
+![Screenshot 1.7](/images/Infra_7.png)
  
 ## Software configuration:
 1. In Azure Sphere Developer Command Prompt, execute the following command to get Azure Sphere tenant’s ID (1ed8d750-7cd9-43ff-8714-b68ba7d65e4e):
