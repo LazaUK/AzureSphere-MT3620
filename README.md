@@ -5,9 +5,7 @@
 
 ## Infrastructure Setup:
 1. In Azure portal, create and link to each other Azure IoT Hub and Azure IoT Hub Device Provisioning Service (DPS) resources, using the following [Quick Setup guide](https://docs.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision).
-
 ![Screenshot 1.1](/images/Infra_1.png)
-
 > **Note**: To use Device Twin capability, IoT Hub should be on the Standard pricing tier.
 
 2. In Azure Sphere Developer Command Prompt, download CA certificate from Azure Sphere tenant using the following command:
