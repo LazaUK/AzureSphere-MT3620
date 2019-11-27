@@ -1,7 +1,3 @@
-## Credits:
-**This solution is based on the original sample code from Microsoft Azure Sphere team, published** [here](https://github.com/Azure/azure-sphere-samples)
-
-
 ## Infrastructure Setup:
 1.	In Azure portal, create and link to each other Azure IoT Hub and Azure IoT Hub Device Provisioning Service (DPS) resources, using the following Quick Setup guide: https://docs.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision.
 
@@ -34,8 +30,6 @@ azsphere tenant show-selected
 5.	In Visual Studio, click File -> Open -> CMake, navigate to the repo’s Software -> VotingApp and then open app_manifest.json file.
  
 6.	Update placeholders highlighted in the screenshot below with the values of your Azure Sphere tenant’s ID, DPS ID Scope and IoT Hub names collected in Steps 1, 2 and 3 above.
- 
-
 
 7.	Select CMakeLists.txt file and then click Build -> Rebuild Current Document (CMakeLists.txt). Verify that an image package is being generated as shown below.
  
@@ -55,3 +49,9 @@ azsphere device enable-development
 4.	Alternatively, you can setup Azure storage account or a database as an output for Azure Stream Analytics job.
  
 5.	Last part is to create your dashboard in PowerBI. You may configure it directly at https://powerbi.microsoft.com/en-us/ or use richer functionality with the PowerBI desktop client.
+
+## Working model - YouTube video
+You can find short demo of the working solution here on YouTube
+
+## Credits:
+**This solution is based on the original sample code from Microsoft Azure Sphere team, published** [here](https://github.com/Azure/azure-sphere-samples)
