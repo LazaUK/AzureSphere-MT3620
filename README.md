@@ -28,7 +28,7 @@ You should see confirmation that the validation certificate has been saved.
 7. Switch to Azure IoT DPS -> Manage Enrolments menu and add new enrolment group with the primary certificate that we verified in Step 6 above.
 ![Screenshot 1.7](/images/Infra_7.png)
  
-## Software configuration:
+## Data flow configuration:
 1. In Azure Sphere Developer Command Prompt, execute the following command to get Azure Sphere tenant’s ID:
 ```
 azsphere tenant show-selected
