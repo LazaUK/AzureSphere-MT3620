@@ -68,7 +68,7 @@ The following diagram shows the main components utilised in this project.
 ![Screenshot 4.1](/images/AzSphere_Schematics.png)
 
 ## Working model - YouTube video:
-You can find short demo of the working solution here on YouTube
+You can find short demo of the working solution here on [YouTube](https://youtu.be/QZcHa6_i7bo)
 
 ## Credits:
 This solution is based on the original sample code from Microsoft Azure Sphere team, published [here](https://github.com/Azure/azure-sphere-samples)
